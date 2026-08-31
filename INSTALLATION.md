@@ -86,12 +86,3 @@ Open the Claude Desktop config file and add:
 
 Then restart Claude Desktop.
 
-## Troubleshooting
-
-- If the server fails to start, verify the Python path and dependencies.
-- If the database fails to connect, confirm MySQL is running and credentials are correct.
-- If Claude Desktop does not recognize the tool, validate the JSON config and restart the app.
-
-## Next Steps
-
-Once the server is connected, you can ask Claude Desktop to manage tasks directly through the MCP tools.
