@@ -1,8 +1,8 @@
-# MSSQL MCP Server
+# MYSQL MCP Server
 
 This project exposes a lightweight Model Context Protocol (MCP) server for managing tasks in a MySQL database. It gives Claude Desktop and other MCP-compatible clients a clean way to list tasks, add new ones, update their status, and delete them.
 
-> Note: the codebase is configured for MySQL using PyMySQL, even though the repository name references MSSQL. The connection settings are managed through environment variables in `dbConfig.py`.
+> Note: The connection settings are managed through environment variables in `dbConfig.py`.
 
 ## Features
 
@@ -110,7 +110,7 @@ To connect this MCP server to Claude Desktop:
     "mysql-tasks-server": {
       "command": "C:/path/to/python.exe",
       "args": [
-        "C:/path/to/MSSQL MCP Server/mcp_server.py"
+        "C:/path/to/MYSQL MCP Server/mcp_server.py"
       ],
       "env": {
         "DB_HOST": "127.0.0.1",
@@ -131,7 +131,7 @@ To connect this MCP server to Claude Desktop:
 - If you run the server from a virtual environment, the Python path is usually something like:
 
 ```powershell
-C:\Users\YOUR_NAME\Projects\MSSQL MCP Server\.venv\Scripts\python.exe
+C:\Users\YOUR_NAME\Projects\MYSQL MCP Server\.venv\Scripts\python.exe
 ```
 
 - If Claude Desktop does not detect the server, restart Claude Desktop after saving the config.
